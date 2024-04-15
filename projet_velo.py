@@ -14,7 +14,7 @@ st.set_page_config(
     )  
 
 # Header
-img = Image.open("/Users/azamiidrissiabderrahmane/Documents/Streamlit/Media/Bikes.jpg")
+img = Image.open("Bikes.jpg")
 st.image(img)
 st.markdown("<h1 style='text-align: center; color: goldenrod;'>Analyse du Trafic Cycliste à Paris</h1>", unsafe_allow_html=True)
 
@@ -37,7 +37,7 @@ Silvana **DIAZ PAREDES**\n
 st.sidebar.markdown(texte, unsafe_allow_html=True)
 
 # Dataset principal
-df = pd.read_csv("/Users/azamiidrissiabderrahmane/Documents/Streamlit/dataset_projet_velo.csv")
+df=pd.read_csv("dataset_projet_velo.csv")
 
 list_compteurs = df['nom_compteur'].unique().tolist()
 cols=['id_compteur','nom_compteur']
@@ -209,7 +209,7 @@ if page == pages[1]:
                       
          Extrait du DataFrame :
          """)
-         df_meteo = pd.read_csv("/Users/azamiidrissiabderrahmane/Documents/Streamlit/meteo_paris_2023_2024.csv", sep=";")
+         df_meteo=pd.read_csv("meteo_paris_2023_2024.csv",sep=';')
          st.dataframe(df_meteo.head(5))
          st.markdown("\n")
 
