@@ -1,7 +1,3 @@
-source /path/to/your/venv/bin/activate
-pip install matplotlib
-
-
 import streamlit as st
 import pandas as pd
 import numpy as np
