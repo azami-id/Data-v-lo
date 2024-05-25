@@ -21,12 +21,8 @@ page=st.sidebar.radio("Aller vers", pages)
 # Encadrement du sidebar
 texte = """
 <div style="text-align: center; border: 0.75px solid #040925; padding: 7px; border-radius: 5px; background-color: #9ec9e';">
-**TEAM**\n
-
-Regine **NJAWE OUENDJI**\n
+**Réalisé par : **\n
 Abderrahmane **AZAMI IDRISSI**\n 
-Silvana **DIAZ PAREDES**\n
-**BDA Février 2024**
  </div>
 """
 st.sidebar.markdown(texte, unsafe_allow_html=True)
